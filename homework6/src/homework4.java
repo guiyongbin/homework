@@ -8,6 +8,7 @@ import java.util.Arrays;
 public class homework4 {
 
 
+
     public int leastInterval(char[] tasks, int n) {
         int[] map = new int[26];
         for (char c : tasks) {
