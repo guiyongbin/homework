@@ -4,7 +4,7 @@ import java.util.*;
  * 前k个高频元素
  * https://leetcode-cn.com/problems/top-k-frequent-elements/
  */
-public class homework6 {
+public class TopK {
 
     public List<Integer> topKFrequent(int[] nums, int k) {
         List<Integer> result = new ArrayList<>(k);
@@ -41,7 +41,7 @@ public class homework6 {
 
     public static void main(String[] args) {
         int[] nums = {1, 1, 1, 2, 2, 3, 4, 4, 4, 4};
-        homework6 h = new homework6();
+        TopK h = new TopK();
         List<Integer> integers = h.topKFrequent(nums, 2);
         System.out.println(integers);
     }
