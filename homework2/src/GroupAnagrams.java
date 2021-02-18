@@ -12,19 +12,20 @@ public class GroupAnagrams {
 
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
+
         for (String str : strs) {
             char[] chars = str.toCharArray();
             Arrays.sort(chars);
             String key = String.valueOf(chars);
             List<String> list = map.get(key);
-            if(list==null){
+            if (list == null) {
                 list = new ArrayList<>();
             }
             list.add(str);
-            map.put(key,list);
+            map.put(key, list);
         }
-        return new ArrayList<List<String>>(map.values());
 
+        return new ArrayList<List<String>>(map.values());
     }
 
 
